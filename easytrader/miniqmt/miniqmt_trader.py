@@ -306,6 +306,7 @@ class MiniqmtTrader:
             positions.append(
                 {
                     'stock_code': pos.stock_code,
+                    'stock_name': pos.instrument_name,
                     'security': pos.stock_code[:6],
                     'volume': pos.volume,
                     'can_use_volume': pos.can_use_volume,
@@ -315,6 +316,8 @@ class MiniqmtTrader:
                     'on_road_volume': pos.on_road_volume,
                     'yesterday_volume': pos.yesterday_volume,
                     'avg_price': pos.avg_price,
+                    'last_price': pos.last_price,
+                    'profit_rate': pos.profit_rate,
                     'direction': pos.direction,
                     'account_type': pos.account_type,
                     'account_id': pos.account_id,
